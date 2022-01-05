@@ -1,0 +1,7 @@
+Total de brasileiros      - 207853 milhoes
+
+Populacao do Norte        - 17871 milhoes 
+Populacao do Nordeste     - 56618 milhoes
+Populacao do Sudeste      - 87691 milhoes
+Populacao do SuL          - 29710 milhoes
+Populacao do Centro-Oeste - 15964 milhoes

@@ -1,0 +1,24 @@
+Populacao do Norte Branca                    - 19.3 por cento
+Populacao do Norte Preta                     - 7.1  por cento
+Populacao do Norte Parda                     - 71.8 por cento
+Populacao do Norte Amarela e Indigena        - 1.8  por cento
+
+Populacao do Nordeste Branca                 - 24.6 por cento
+Populacao do Nordeste Preta                  - 11.3 por cento
+Populacao do Nordeste Parda                  - 63.2 por cento
+Populacao do Nordeste Amarela e Indigena     - 0.8  por cento
+
+Populacao do Sudeste Branca                  - 50.7 por cento
+Populacao do Sudeste Preta                   - 9.9  por cento
+Populacao do Sudeste Parda                   - 38.3 por cento
+Populacao do Sudeste Amarela e Indigena      - 1.1  por cento
+
+Populacao do Sul Branca                      - 73.9 por cento
+Populacao do Sul Preta                       - 4.8  por cento
+Populacao do Sul Parda                       - 20.6 por cento
+Populacao do Sul Amarela e Indigena          - 0.7  por cento
+
+Populacao do Centro-Oeste Branca             - 36.5 por cento
+Populacao do Centro-Oeste Preta              - 9.2  por cento
+Populacao do Centro-Oeste Parda              - 53.0 por cento
+Populacao do Centro-Oeste Amarela e Indigena - 1.3  por cento

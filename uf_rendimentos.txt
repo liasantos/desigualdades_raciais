@@ -1,0 +1,30 @@
+
+                   * ***      Rendimentos por UF em Reais      *** *             
+
+** Rondonia:             ** Geral - 1958,00 ** Brancos - 2513,00 ** Pretos/Pardos - 1695,00 **
+** Acre:                 ** Geral - 1718,00 ** Brancos - 2222,00 ** Pretos/Pardos - 1579,00 **
+** Amazonas:             ** Geral - 1531,00 ** Brancos - 2380,00 ** Pretos/Pardos - 1353,00 **
+** Roraima:              ** Geral - 2267,00 ** Brancos - 3161,00 ** Pretos/Pardos - 2020,00 **
+** Para:                 ** Geral - 1551,00 ** Brancos - 2278,00 ** Pretos/Pardos - 1379,00 **
+** Amapa:                ** Geral - 1944,00 ** Brancos - 2560,00 ** Pretos/Pardos - 1812,00 **
+** Tocantins             ** Geral - 1872,00 ** Brancos - 2633,00 ** Pretos/Pardos - 1626,00 **
+** Maranhao              ** Geral - 1249,00 ** Brancos - 1588,00 ** Pretos/Pardos - 1168,00 **
+** Piaui                 ** Geral - 1320,00 ** Brancos - 1894,00 ** Pretos/Pardos - 1173,00 **
+** Ceara                 ** Geral - 1419,00 ** Brancos - 2052,00 ** Pretos/Pardos - 1160,00 **
+** Rio Grande do Norte:  ** Geral - 1591,00 ** Brancos - 1930,00 ** Pretos/Pardos - 1397,00 **
+** Paraiba               ** Geral - 1477,00 ** Brancos - 1998,00 ** Pretos/Pardos - 1224,00 **
+** Pernambuco            ** Geral - 1529,00 ** Brancos - 1865,00 ** Pretos/Pardos - 1356,00 **
+** Alagoas               ** Geral - 1507,00 ** Brancos - 2141,00 ** Pretos/Pardos - 1260,00 **
+** Sergipe               ** Geral - 1609,00 ** Brancos - 1897,00 ** Pretos/Pardos - 1531,00 **
+** Bahia                 ** Geral - 1420,00 ** Brancos - 1979,00 ** Pretos/Pardos - 1299,00 **
+** Minas Gerais 	 ** Geral - 1846,00 ** Brancos - 2323,00 ** Pretos/Pardos - 1526,00 **
+** Espirito Santo        ** Geral - 1952,00 ** Brancos - 2485,00 ** Pretos/Pardos - 1629,00 **
+** Rio de Janeiro        ** Geral - 2551,00 ** Brancos - 3216,00 ** Pretos/Pardos - 1981,00 **
+** Sao Paulo             ** Geral - 2800,00 ** Brancos - 3391,00 ** Pretos/Pardos - 1844,00 **
+** Parana                ** Geral - 2370,00 ** Brancos - 2673,00 ** Pretos/Pardos - 1733,00 **
+** Santa Catarina        ** Geral - 2341,00 ** Brancos - 2466,00 ** Pretos/Pardos - 1827,00 **
+** Rio Grande do Sul     ** Geral - 2357,00 ** Brancos - 2525,00 ** Pretos/Pardos - 1687,00 **
+** Mato Grosso do Sul    ** Geral - 2150,00 ** Brancos - 2650,00 ** Pretos/Pardos - 1718,00 **
+** Mato Grosso           ** Geral - 2242,00 ** Brancos - 2667,00 ** Pretos/Pardos - 2045,00 **
+** Goias                 ** Geral - 2028,00 ** Brancos - 2411,00 ** Pretos/Pardos - 1819,00 **
+** Distrito Federal      ** Geral - 3749,00 ** Brancos - 4795,00 ** Pretos/Pardos - 3127,00 **
