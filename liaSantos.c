@@ -4,21 +4,14 @@
 
 // ~~~~~~ distribuicao ~~~~~~
 
-// *** # total brasil # ***
-//int distribuicaoPopulacaoBrasil = 207853;
-// *** # total por regiao # ***
+int distribPopBrasil = 207853;
+
 int populacaoNorte = 17871; 
 int populacaoNordeste = 56618;
 int populacaoSudeste = 87691;
 int populacaoSuL = 29710;
 int populacaoCentroOeste = 15964;
-/*// *** # total por cor # ***
-float populacaoBranca = 43.1;
-float populacaoPreta = 9.3;
-float populacaoParda = 46.5;
-float populacaoAmarela = 0.7;
-float populacaoIndigena = 0.4;*/
-// *** # total por cor e regiao # ***
+
 float popNorteBranca = 19.3;
 float popNordesteBranca = 24.6;
 float popSudesteBranca = 50.7;
@@ -39,64 +32,19 @@ float popCOAmarelaEIndigena = 1.3;
 
 // ~~~~~~ trabalho ~~~~~~
 
-// *** # taxa desocupacao +14 anos # ***
 float desempregoBrasil = 12.0;
 float desempregoBrancas = 9.5;
 float desempregoPretas = 14.1;
-// *** # taxa desocupacao pop. branca +14 anos por regiao # ***
-float desempregoNorteBrancas = 9.7;
-float desempregoNordesteBrancas = 11.7;
-float desempregoSudesteBrancas = 10.5;
-float desempregoSulBrancas = 6.8;
-float desempregoCOBrancas = 7.4;
-// *** # taxa desocupacao pop. preta +14 anos por regiao # ***
-float desempregoNortePretas = 12.9;
-float desempregoNordestePretas = 15.3;
-float desempregoSudestePretas = 14.9;
-float desempregoSulPretas = 10.4;
-float desempregoCOPretas = 10.2;
-// *** # taxa pop. branca ocupada em cargo gerencial # ***
+
+int empregoBrasil = 92333;
+float empregoBrancas =  45.2;
+float empregoPretas= 53.7;
+
+int cargoLiderBrasil = 3035;
 float cargoLiderBrancasBrasil = 68.6;
-float cargoLiderBrancasNorte = 38.7;
-float cargoLiderBrancasNordeste = 43.2;
-float cargoLiderBrancasSudeste = 73.2;
-float cargoLiderBrancasSul = 88.0;
-float cargoLiderBrancasCO = 54.6;
-// *** # taxa pop. preta ocupada em cargo gerencial # ***
 float cargoLiderPretasBrasil = 29.9;
-float cargoLiderPretasNorte = 61.1;
-float cargoLiderPretasNordeste = 56.3;
-float cargoLiderPretasSudeste = 24.4;
-float cargoLiderPretasSul = 11.6;
-float cargoLiderPretasCO = 44.6;
-// *** # rendimento médio real mensal # ***
-int rendaMediaMesBrasil = 2163;
-int rendaMediaMesNorte = 1667;
-int rendaMediaMesNordeste = 1441;
-int rendaMediaMesSudeste = 2491;
-int rendaMediaMesSul = 2358;
-int rendaMediaMesCO = 2415;
-// *** # rendimento médio real por hora # ***
-float rendaMediaHoraBrasil = 13.3;
-float rendaMediaHoraNorte = 10.8;
-float rendaMediaHoraNordeste = 9.5;
-float rendaMediaHoraSudeste = 15.0;
-float rendaMediaHoraSul = 14.5;
-float rendaMediaHoraCO = 14.9;
-// ~~~~~~ moradia ~~~~~~
-// *** # proporcao pessoas sem acesso servicos basicos # ***
-float semColetaDeLixoBrasil= 9.7;
-float semColetaDeLixoBrancas = 6.0;
-float semColetaDeLixoPretas = 12.5;
-float semAbastecimentoDeAguaBrasil = 15.1;
-float semAbastecimentoDeAguaBrancas = 11.5;
-float semAbastecimentoDeAguaPretas = 17.9;
-float semEsgoteamentoSanitarioBrasil = 35.7;
-float semEsgoteamentoSanitarioBrancas = 26.5;
-float semEsgoteamentoSanitarioPretas = 42.8;
 
 //~~~~~~ outros dados ~~~~~~
-
 char tituloDistr[30]="Distribuicao da populacao ";
 char geral[15]="no Brasil ";
 char cor[10]="por cor";
@@ -109,7 +57,6 @@ char total_brasileiros_cor[30]={"total_brasileiros_cor.txt"};
 char total_brasileiros_uf_cor[30]={"total_brasileiros_uf_cor.txt"};
 
 // ****** F U N C O E S  de  I M P R E S S A O ******
-
 
 void imprimeArquivo(char endereco[]){
 	char c;
@@ -197,8 +144,8 @@ void subMenu(){
 	
 	printf("\n  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ O que gostaria de fazer ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n");
 	printf("  ²                                                        ³\n");
-	printf("  ³             1- Ver todos os dados                      ³\n");
-	printf("  ³             2- Comparar regioes                        ³\n");	
+	printf("  ³             1- Ver dados                               ³\n");
+	printf("  ³             2- Ver comparacoes                         ³\n");	
 	printf("  ³                                                        ³\n");
 	printf("  ³             0- Voltar ao menu principal                ³\n");
 	printf("  ³                                                        ²\n");
@@ -253,6 +200,27 @@ void menuVoltar(){
 				limpaTela();
 				menuVoltar();				
 		}
+}
+
+void menuServicos(){	
+	printf("\n  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  O que gostaria de ver  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n");
+	printf("  ²                                                        ³\n");
+	printf("  ³             1- Coleta de Lixo                          ³\n");
+	printf("  ³             2- Abastecimento de Agua                   ³\n");	
+	printf("  ³             3- Esgoteamento Sanitario                  ³\n");
+	printf("  ³                                                        ³\n");
+	printf("  ³             0- Voltar                                  ³\n");
+	printf("  ³                                                        ²\n");
+	printf("  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ\n");
+}
+
+void referencias(){
+	printf("\n\n Referencias de dados: \n");
+	printf("\n -> IBGE - Instituto Brasileiro de Geografia e Estatistica\n");
+	printf("   Disponivel em: www.ibge.gov.br/estatisticas/sociais/populacao/25844-desigualdades-sociais-por-cor-ou-raca.html\n");
+	printf("\n -> Nota: \n");
+	printf("  Os dados sao referentes ao ano de 2018, de acordo com o ultimo censo realizado pelo IBGE.\n");
+	printf(" Apos 2018 nao foram realizados novos censos.");
 }
 
 // ****** F U N C O E S  de  D A D O S ******
@@ -522,12 +490,14 @@ void distribuicao(){
 		printf("\n\n");
 		printf(" %s\n\n", titulo);
 		imprimeArquivo(total_brasileiros_uf_cor);
+		referencias();
 		menuVoltar();
 		
 	}else 
 		if(select== 2){			
 			maiorDistribuicao();
-			menorDistribuicao();		
+			menorDistribuicao();
+			referencias();		
 			menuVoltar();
 		}
 }
@@ -535,41 +505,89 @@ void distribuicao(){
 void trabalho(){
 	int select;
 	subMenu();
-	select = selectSubMenu();
-	
+	select = selectSubMenu();	
 	if(select == 1){
-		imprimeArquivo(uf_rendimentos);
-		menuVoltar();
-	}else 
-		if(select== 2){
-			printf("tchau");
-			menuVoltar();
-		}
-}
-
-void saneamento(){
-	int select;
-	subMenu();
-	select = selectSubMenu();
-	
-	if(select == 1){
-		printf("oi");
-		menuVoltar();
-	}else 
-		if(select== 2){
-			printf("tchau");
-			menuVoltar();
-		}
+		int auxiliar = porcentParaDecimal(distribPopBrasil, desempregoBrasil);
+		int auxiliar1=0;
 		
+		printf("\n -> Taxas de desocupacao \n");
+			
+		printf("\n * A taxa de desemprego no Brasil, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",desempregoBrasil);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar);
+		
+		auxiliar1 = (desempregoBrancas/100) * auxiliar;
+		
+		printf("\n * A taxa de desemprego de pessoas brancas, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",desempregoBrancas);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar1);
+		
+		auxiliar1 = (desempregoPretas/100) * auxiliar;
+			
+		printf("\n * A taxa de desemprego de pessoas pretas ou pardas, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",desempregoPretas);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar);
+		
+		printf("\n -> Taxas de ocupacao \n");
+		
+		auxiliar = porcentParaDecimal(distribPopBrasil, empregoBrasil);
+		
+		printf("\n * A taxa de empregos ocupados no Brasil, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",empregoBrasil);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar);
+		
+		auxiliar1 = (empregoBrancas/100) * auxiliar;
+		
+		printf("\n * A taxa de empregos ocupados por pessoas brancas, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",empregoBrancas);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar1);
+		
+		auxiliar1 = (empregoPretas/100) * auxiliar;
+			
+		printf("\n * A taxa de empregos ocupados por pessoas pretas ou pardas, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",empregoPretas);
+		printf("totalizando uma media de %d pessoas.\n",auxiliar);
+		
+		printf("\n -> Cargos Gerenciais \n");
+			
+		auxiliar = cargoLiderBrasil * 1000;
+		
+		printf("\n * O numero medio de brasileiros em cargos gerenciais, considerando pessoas acima de 14 anos, eh de %d.\n", auxiliar);
+		
+		printf("\n * A taxa de pessoas brancas em cargos gerenciais, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",cargoLiderBrancasBrasil);
+		printf("totalizando uma media de %d pessoas.\n",porcentParaDecimal(cargoLiderBrasil, cargoLiderBrancasBrasil));
+		
+		printf("\n * A taxa de pessoas pretas ou pardas em cargos gerenciais, considerando pessoas acima de 14 anos, eh de %2.1f %%\n",cargoLiderPretasBrasil);
+		printf("totalizando uma media de %d pessoas.\n",porcentParaDecimal(cargoLiderBrasil, cargoLiderPretasBrasil));
+			
+		referencias();
+		menuVoltar();
+	}else 
+		if(select== 2){
+			imprimeArquivo(uf_rendimentos);
+			referencias();
+			menuVoltar();
+		}
 }
-
-void teste(){
-	//printf("%d\n", distribuicaoPopulacaoBrasil);
-	//printf("%2.f\n", populacaoBranca);
-	//printf("%d\n", porcentParaDecimal(distribuicaoPopulacaoBrasil, populacaoBranca));
-	//imprimeArquivo(uf_rendimentos);
-}
-
-char referencias(){
-	printf("oi");
+	
+void saneamento(){	
+	int opcoes;	
+	menuServicos();
+	scanf("%d", &opcoes);
+	if(opcoes==1){
+		printf("\n-> Coleta de lixo:\n\n");
+		imprimeArquivo("coleta_lixo.txt");
+		referencias();
+		menuVoltar();
+	}else 
+		if(opcoes==2){
+			printf("\n-> Abastecimento de Agua:\n\n");
+			imprimeArquivo("abastecimento_agua.txt");
+			referencias();
+			menuVoltar();
+		}else 
+			if(opcoes==3){
+				printf("\n-> Esgotemento Sanitario:\n\n");
+				imprimeArquivo("esgoteamento.txt");
+				referencias();
+				menuVoltar();
+			}else if(opcoes==0){
+				limpaTela();
+				subMenu();
+				selectSubMenu();
+			}
 }
